@@ -19,6 +19,9 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    background: rgba(51, 51, 51, 0.6); /* Match section transparency */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 /* Header */
@@ -27,8 +30,15 @@ body {
     height: auto; /* This will maintain the aspect ratio */
 }
 
+.Amelia {
+    width: 30%; /* Adjust the size of Amelia image */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Center the image with margin */
+    border-radius: 10px;
+}
+
 header {
-    background: rgba(51, 51, 51, 0.6); /* Further increased transparency */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -46,6 +56,7 @@ header p {
     margin-bottom: 20px;
 }
 
+/* Navigation */
 nav {
     background: rgba(51, 51, 51, 0.9); /* Slightly less transparent to stand out */
     padding: 10px 0;
@@ -64,6 +75,16 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
+    padding: 5px 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Add "pop" effect when hovering over the menu items */
+nav a:hover {
+    transform: scale(1.1); /* Scale the text up */
+    background-color: rgba(255, 255, 255, 0.2); /* Add a subtle background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow to the link */
+    border-radius: 5px; /* Round the corners of the background for a smoother look */
 }
 
 /* Sections */
@@ -99,6 +120,12 @@ section {
 .project img {
     max-width: 100%;
     border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.project img:hover {
+    transform: scale(1.1); /* Scale the image to 110% of its size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for emphasis */
 }
 
 .project h3 {
@@ -132,7 +159,7 @@ section {
 
 #contact button {
     padding: 10px;
-    background-color: #333;
+    background-color: #686868;
     color: #fff;
     border: none;
     cursor: pointer;
