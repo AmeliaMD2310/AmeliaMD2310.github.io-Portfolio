@@ -99,6 +99,15 @@ section {
     margin: 15px 0;
 }
 
+.project h3 a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.project h3 a:hover {
+    text-decoration: underline;
+}
+
 /* Contact Section */
 #contact form {
     max-width: 600px;
@@ -116,7 +125,7 @@ section {
 
 #contact button {
     padding: 10px;
-    background-color: #7e7d7d;
+    background-color: #333;
     color: #fff;
     border: none;
     cursor: pointer;
