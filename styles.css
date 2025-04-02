@@ -165,7 +165,7 @@ section {
     margin-bottom: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgb(255, 255, 255);
-    color: #fff;
+    color: #000000;
     border-radius: 5px;
     font-size: 1rem;
 }
@@ -177,7 +177,7 @@ section {
 
 #contact input::placeholder, 
 #contact textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 #contact button {
